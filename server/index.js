@@ -27,6 +27,9 @@ app.use("/api/user",userRouter)
 app.use("/api/website",websiteRouter)
 app.use("/api/billing",billingRouter)
 
+app.get("/", (req, res) => {
+  res.send("Backend Running Successfully");
+});
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server started on port ${port}`);
