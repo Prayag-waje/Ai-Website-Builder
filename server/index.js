@@ -19,7 +19,7 @@ const port=process.env.PORT || 5000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"http://3.89.189.112:5000",
     credentials:true
 }))
 app.use("/api/auth",authRouter)
