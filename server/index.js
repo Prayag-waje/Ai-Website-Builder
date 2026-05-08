@@ -19,7 +19,7 @@ const port=process.env.PORT || 5000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"http://3.89.189.112:8000",
+    origin:"http://ai-website-builder-aws.s3-website-us-east-1.amazonaws.com/",
     credentials:true
 }))
 app.use("/api/auth",authRouter)
